@@ -1,10 +1,16 @@
-# FE0222BProgettoSettimana10
+# FE07B_progetto_settimana10
+TodoList with Angular 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Crazione di una TodoList con Angular e Bootstrap 
+
+![todo](https://user-images.githubusercontent.com/98649610/162745681-340894c0-efd2-4294-b1b6-a58e4fbd7571.JPG)
+
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

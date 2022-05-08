@@ -1,38 +1,36 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { RouterModule, Route } from '@angular/router';
+import { Route, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar/navbar.component';
-import { CompletatiComponent } from './pages/completati/completati.component';
-import { TodoComponent } from './pages/todo/todo/todo.component';
+import { NavbarComponent } from './navbar.component';
+import { CompletedPage } from './pages/completed.page';
+import { TodosPage } from './pages/todos.page';
 
-const routes: Route[]= [
+const routes:Route[]=[
   {
-    path: '',
-    component: TodoComponent
+    path:"",
+    component: TodosPage
   },
   {
-    path: 'completati',
-    component: CompletatiComponent
+    path:"completed",
+    component:CompletedPage
   }
 ]
-
-
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CompletatiComponent,
-    TodoComponent
+    TodosPage,
+    CompletedPage
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
-  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
